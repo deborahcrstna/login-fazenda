@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('images/fazenda_americana.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: background-color 0.3s; /* Adicionando uma transição suave para a mudança de cores */
+  }
+  
+  .farm-description {
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Adicionando margem à direita para separar da div de login */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centralizar o conteúdo horizontalmente */
+    justify-content: center; /* Centralizar o conteúdo verticalmente */
+  }
+  
+  /* Centralizar palavras */
+  .center-text {
+    text-align: center;
+  }
+  
+  .login-container {
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-container h2 {
+    text-align: center;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .login-form label,
+  .login-form input {
+    margin-bottom: 10px;
+  }
+  
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-form input[type="submit"] {
+    padding: 10px;
+    background-color: #1c8f0d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Botão de alternância de tema */
+  .theme-toggle {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #0a4d23;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para o modo escuro */
+  [data-theme="dark"] {
+    background-image: url('images/fazenda_noite.jpg');
+  }
+  
+  [data-theme="dark"] .farm-description {
+    background-color: #333;
+  }
+  
+  [data-theme="dark"] .farm-description h3 {
+    color: #fff;
+  }
+  
+  [data-theme="dark"] .farm-description p {
+    color: #fff;
+  }
+  
+  [data-theme="dark"] .login-container {
+    background-color: #333;
+  }
+  
+  [data-theme="dark"] .login-container h2 {
+    color: #fff;
+  }
+  
+  [data-theme="dark"] .login-form label,
+  [data-theme="dark"] .login-form input {
+    color: #fff;
+  }
+  
+  [data-theme="dark"] .login-form input[type="text"],
+  [data-theme="dark"] .login-form input[type="password"] {
+    background-color: #444;
+    color: #fff;
+    border-color: #555;
+  }
+  
+  [data-theme="dark"] .login-form input[type="submit"] {
+    background-color: #1c8f0d;
+    border-color: #1c8f0d;
+  }
+  
